@@ -8,6 +8,7 @@
     "@material-ui/styles": "^4.11.3",
     "axios": "^0.21.1",
     "clsx": "latest",
+    "fs-extra": "^9.1.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "next": "latest",
@@ -22,6 +23,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "postbuild":"node scripts/sitemap.js",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   }
 }

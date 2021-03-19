@@ -52,6 +52,9 @@ export default function Services({ setValue, setSelectedIndex }) {
           Top Custom Software Development Services | Arc Development
         </title>
         <meta name="description" key="description" content="Cutting-edge sotware, mobile apps, and website development services sleek custom design - get a free online estimate instantly!"/>
+        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Services" key="og:title"/>
+        <meta property="og:url" content="arc.com/services" key="og:url" />
+        <meta rel="canonical" href="https://arc.com/services" key="canonical"/>
       </Head>
       <Grid
         item

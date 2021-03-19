@@ -760,6 +760,9 @@ export default function Estimate() {
           Free Custom Software Estimate | Arc Development
         </title>
         <meta name="description" key="description" content="Use our free online estimate calculator to instantly check the cost of your custom software, mobile Apps or website design and development project!"/>
+        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Free Estimate" key="og:title"/>
+        <meta property="og:url" content="arc.com/estimate" key="og:url" />
+        <meta rel="canonical" href="https://arc.com/estimate" key="canonical"/>
       </Head>
       <Grid
         item

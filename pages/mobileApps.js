@@ -12,11 +12,7 @@ import Hidden from "@material-ui/core/Hidden";
 import IntegrationAnimation from "../src/animations/integrationAnimation/data.json";
 import CallToAction from "../src/ui/CallToAction";
 
-import backArrow from "../src/assets/backArrow.svg";
-import forwardArrow from "../src/assets/forwardArrow.svg";
-import swiss from "../assets/swissKnife.svg";
-import access from "../assets/extendAccess.svg";
-import engagement from "../assets/increaseEngagement.svg";
+
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -59,6 +55,9 @@ export default function MobileApps({ setValue, setSelectedIndex }) {
           iOS/Android App Design and Development | Arc Development
         </title>
         <meta name="description" key="description" content="Mobile Apps Made Easy | Our cutting-edge mobile app development process lets us build beautifully desined, carefully crafted apps for both iOS and Android."/>
+        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | iOS/Android App Development" key="og:title"/>
+        <meta property="og:url" content="arc.com/mobileapps" key="og:url" />
+        <meta rel="canonical" href="https://arc.com/mobileapps" key="canonical"/>
       </Head>
       <Grid
         item

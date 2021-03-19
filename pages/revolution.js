@@ -42,6 +42,9 @@ export default function Revolution({ setValue }) {
           The Revolution - Cutting-Edge Software | Arc Development
         </title>
         <meta name="description" key="description" content="Visionary insights coupled with cutting-edge technology, is a recipe for revolution. Get a free online estimate instantly!"/>
+        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | The Revolution" key="og:title"/>
+        <meta property="og:url" content="arc.com/revolution"  key="og:url"/>
+        <meta rel="canonical" href="https://arc.com/revolution" key="canonical"/>
       </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: "2em" }}>
         <Typography

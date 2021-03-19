@@ -82,6 +82,9 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
       <Head>
         <title key="title">Custom Software and Design - Free Estimate</title>
         <meta name="description" key="description" content="Cutting-Edge custom software development with gorgeous design from scratch - Let us optimize your business, solving problems instead of creating new ones.!"/>
+        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Custom Software Development" key="og:title"/>
+        <meta property="og:url" content="arc.com/customsoftware" key="og:url" />
+        <meta rel="canonical" href="https://arc.com/customsoftware" key="canonical"/>
       </Head>
       <Grid
         item

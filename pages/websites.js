@@ -55,6 +55,9 @@ export default function Websites({ setValue, setSelectedIndex }) {
           Stunning Custom Website Design | Arc Development
         </title>
       <meta name="description" key="description" content="Completely Custom Designed and built from scatch to be blazing. Optimized code, server-side rendering and perfect responsive design | 99% Page Speed Scrore"/>
+      <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Websites" key="og:title"/>
+      <meta property="og:url" content="arc.com/websites" />
+      <meta rel="canonical" href="https://arc.com/websites" key="canonical"/>
       </Head>
       <Grid
         item

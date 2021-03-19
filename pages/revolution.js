@@ -48,7 +48,7 @@ export default function Revolution({ setValue }) {
       </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: "2em" }}>
         <Typography
-          variant="h2"
+          variant="h1"
           style={{ fontFamily: "pacifico" }}
           align={matchesMD ? "center" : undefined}
         >
@@ -79,7 +79,7 @@ export default function Revolution({ setValue }) {
         <Grid item container direction="column" lg style={{ maxWidth: "40em" }}>
           <Grid item>
             <Typography
-              variant="h2"
+              variant="h1"
               gutterBottom
               align={matchesMD ? "center" : "right"}
             >
@@ -151,7 +151,7 @@ export default function Revolution({ setValue }) {
         <Grid item container direction="column" lg style={{ maxWidth: "40em" }}>
           <Grid item>
             <Typography
-              variant="h2"
+              variant="h1"
               align={matchesMD ? "center" : undefined}
               gutterBottom
             >

@@ -69,7 +69,7 @@ export default function CallToAction({ setValue }) {
         }}
       >
         <Grid item container direction="column">
-          <Typography variant="h2">
+          <Typography variant="h1">
             Simple Software. <br /> Revolutionary Results.
           </Typography>
           <Typography variant="subtitle2" style={{ fontSize: "1.5rem" }}>

@@ -58,7 +58,7 @@ export default function AboutUs({ setValue }) {
         className={classes.rowContainer}
         style={{ marginTop: matchesMD ? "1em" : "2em" }}
       >
-        <Typography variant="h2" align={matchesMD ? "center" : undefined}>
+        <Typography variant="h1" align={matchesMD ? "center" : undefined}>
           About Us
         </Typography>
       </Grid>

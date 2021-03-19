@@ -213,7 +213,7 @@ export default function Contact({ setValue }) {
         <Grid item style={{ maxWidth: "20em" }}>
           <Grid item style={{ marginTop: "2em" }}>
             <Typography
-              variant="h2"
+              variant="h1"
               style={{ lineHeight: 1 }}
               align={matchesMD ? "center" : undefined}
             >
@@ -503,7 +503,7 @@ export default function Contact({ setValue }) {
           }}
         >
           <Grid item>
-            <Typography variant="h2" align={matchesMD ? "center" : undefined}>
+            <Typography variant="h1" align={matchesMD ? "center" : undefined}>
               Simple Software. <br /> Revolutionary Results.
             </Typography>
             <Typography

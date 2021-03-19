@@ -65,7 +65,7 @@ export default function Services({ setValue, setSelectedIndex }) {
       >
         <Typography
           gutterBottom
-          variant="h2"
+          variant="h1"
           align={matchesSM ? "center" : undefined}
         >
           Services
@@ -166,7 +166,7 @@ export default function Services({ setValue, setSelectedIndex }) {
           <Grid item>
             <img
               alt="custom software icon"
-              src="/assets/customsoftware.svg"
+              src="/assets/customSoftware.svg"
               className={classes.icon}
             />
           </Grid>

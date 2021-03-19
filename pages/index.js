@@ -149,7 +149,7 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
       <Grid item>
         <Grid container direction="row" justify="flex-end" alignItems="center">
           <Grid item sm className={classes.heroTextContainer}>
-            <Typography variant="h2" align="center">
+            <Typography variant="h1" align="center">
               Bringing West Coast Technology <br /> to the Midwest
             </Typography>
             <Grid
@@ -412,7 +412,7 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
                 direction="column"
                 style={{ marginBottom: matchesXS ? "10em" : 0 }}
               >
-                <Typography variant="h2" style={{ color: "white" }}>
+                <Typography variant="h1" style={{ color: "white" }}>
                   About Us
                 </Typography>
                 <Typography variant="subtitle2">Let's get personal.</Typography>
@@ -446,7 +446,7 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
               }}
             >
               <Grid container direction="column">
-                <Typography variant="h2" style={{ color: "white" }}>
+                <Typography variant="h1" style={{ color: "white" }}>
                   Contact Us
                 </Typography>
                 <Typography variant="subtitle2">Say hello!</Typography>

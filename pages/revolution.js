@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import technologyAnimation from "../src/animations/technologyAnimation/data.json";
 
+import CallToAction from "../src/ui/CallToAction";
 
 const useStyles = makeStyles((theme) => ({
   rowContainer: {
@@ -431,7 +432,7 @@ export default function Revolution({ setValue }) {
           </Grid>
         </Grid>
         <Grid item lg style={{ alignSelf: "center" }}>
-          <img src="/assets/reviewIcon.svg" alt="magnifying glass" width="100%" />
+          <img src="/assets/reviewIcon.svg" alt="magnifying glass" width="100%" style={{maxWidth:"40em"}}/>
         </Grid>
       </Grid>
       {/* --- */}
@@ -543,7 +544,7 @@ export default function Revolution({ setValue }) {
           </Grid>
         </Grid>
         <Grid item lg style={{ alignSelf: "center" }}>
-          <img src="/assets/reviewIcon.svg" alt="magnifying glass" width="100%" />
+          <img src="/assets/reviewIcon.svg" alt="magnifying glass" width="100%" style={{maxWidth:"40em"}} />
         </Grid>
       </Grid>
       {/* --- */}
@@ -849,6 +850,9 @@ export default function Revolution({ setValue }) {
         <Grid item lg style={{ alignSelf: "center" }}>
           <img src="/assets/iterateIcon.svg" alt="falling dominoes" width="100%" />
         </Grid>
+      </Grid>
+      <Grid item>
+        <CallToAction setValue={setValue} />
       </Grid>
       {/* --- */}
     </Grid>

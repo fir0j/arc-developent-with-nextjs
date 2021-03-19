@@ -235,14 +235,14 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
         container
         alignItems={matchesMD ? "center" : undefined}
         direction={matchesMD ? "column" : "row"}
-        justify="space-between"
-        style={{ marginBottom: "10em" }}
+        justify={matchesMD ? "center":"space-between"}
         className={classes.rowContainer}
+        style={{display: matchesMD ? "grid":undefined}}
       >
         <Grid
           item
           container
-          classname={classes.itemContainer}
+          className={classes.itemContainer}
           direction={matchesSM ? "column" : "row"}
           md
           style={{ marginBottom: matchesMD ? "15em" : 0 }}
@@ -359,8 +359,8 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
         container
         alignItems={matchesMD ? "center" : undefined}
         direction={matchesMD ? "column" : "row"}
-        justify="space-between"
-        style={{ marginBottom: "20em" }}
+        justify={matchesMD ? "center":"space-between"}
+        style={{ marginBottom: "20em", display: matchesMD ? "grid":undefined}}
         className={classes.rowContainer}
       >
         <Grid

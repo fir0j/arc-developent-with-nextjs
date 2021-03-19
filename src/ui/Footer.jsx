@@ -74,6 +74,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/"
                 onClick={() => setValue(0)}
@@ -87,6 +88,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/services"
                 onClick={() => {
@@ -99,6 +101,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/customsoftware"
                 onClick={() => {
@@ -111,6 +114,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/mobileapps"
                 onClick={() => {
@@ -123,6 +127,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/websites"
                 onClick={() => {
@@ -139,6 +144,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/revolution"
                 onClick={() => setValue(2)}
@@ -148,6 +154,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/revolution"
                 onClick={() => setValue(2)}
@@ -157,6 +164,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/revolution"
                 onClick={() => setValue(2)}
@@ -166,6 +174,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/revolution"
                 onClick={() => setValue(2)}
@@ -180,6 +189,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/about"
                 onClick={() => setValue(3)}
@@ -189,6 +199,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/about"
                 onClick={() => setValue(3)}
@@ -198,6 +209,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/about"
                 onClick={() => setValue(3)}
@@ -211,6 +223,7 @@ export default function Footer({ setValue, setSelectedIndex }) {
               <Grid
                 item
                 className={classes.link}
+                style={{ textDecoration: "none" }}
                 component={Link}
                 href="/contact"
                 onClick={() => setValue(4)}

@@ -25,7 +25,7 @@
     "start": "next start",
     "export":"next export",
     "postbuild": "node scripts/sitemap.js",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
    
   }
 }

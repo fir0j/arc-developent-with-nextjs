@@ -523,7 +523,7 @@ export default function Header({
                   className="st1 st2"
                   fontSize="57"
                 >
-                  Arc
+                  Ace
                 </text>
                 <text
                   transform="translate(17.692 112.015)"

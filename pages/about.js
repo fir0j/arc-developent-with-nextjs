@@ -121,7 +121,7 @@ export default function AboutUs({ setValue }) {
                 paragraph
                 align={matchesMD ? "center" : undefined}
               >
-                Founded in 2019, we're ready to get our hands on the world's
+                Founded in 2021, we're ready to get our hands on the world's
                 business problem.
               </Typography>
               <Typography
@@ -183,10 +183,10 @@ export default function AboutUs({ setValue }) {
         </Grid>
         <Grid item>
           <Typography variant="body1" paragraph align="center">
-            Firoj Siddiki, Founder
+            Firoj Siddiki, CEO & Founder
           </Typography>
           <Typography variant="body1" paragraph align="center">
-            I started coding when i was 9 years old.
+            I started building apps when i was the first year of my engieering.
           </Typography>
         </Grid>
         <Grid item>
@@ -196,7 +196,7 @@ export default function AboutUs({ setValue }) {
           <Hidden lgUp>
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" paragraph align="center">
-                I taught myself basic coding from library book in third grade
+                I taught myself basic coding from library book, through online courses, college 
                 and ever since then my passion has solely been set on learning -
                 learning about computers, learning about mathematics and
                 philosophy, studying desing and always just learning.

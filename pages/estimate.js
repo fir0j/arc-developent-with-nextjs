@@ -1012,7 +1012,7 @@ export default function Estimate() {
                 >
                   we can create this digital solution for an estimated{" "}
                   <span className={classes.specialText}>
-                    Rs.{total.toFixed(2)}
+                    Rs.{" "}{total.toFixed(2)}
                   </span>
                 </Typography>
                 <Typography

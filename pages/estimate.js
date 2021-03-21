@@ -102,7 +102,7 @@ const softwareQuestions = [
         icon: "/assets/website.svg",
         iconAlt: "computer outline",
         selected: false,
-        cost: 100,
+        cost: 1000,
       },
       {
         id: 2,
@@ -111,7 +111,7 @@ const softwareQuestions = [
         icon: "/assets/iphone.svg",
         iconAlt: "outline of iphone",
         selected: false,
-        cost: 100,
+        cost: 1000,
       },
       {
         id: 3,
@@ -120,7 +120,7 @@ const softwareQuestions = [
         icon: "/assets/android.svg",
         iconAlt: "outlines of android phone",
         selected: false,
-        cost: 100,
+        cost: 1000,
       },
     ],
     active: true,
@@ -137,7 +137,7 @@ const softwareQuestions = [
         icon: "/assets/camera.svg",
         iconAlt: "camera outline",
         selected: false,
-        cost: 25,
+        cost: 250,
       },
       {
         id: 2,
@@ -146,7 +146,7 @@ const softwareQuestions = [
         icon: "/assets/gps.svg",
         iconAlt: "gps pin",
         selected: false,
-        cost: 25,
+        cost: 250,
       },
       {
         id: 3,
@@ -155,7 +155,7 @@ const softwareQuestions = [
         icon: "/assets/upload.svg",
         iconAlt: "outline of cloud with arrow pointing up",
         selected: false,
-        cost: 25,
+        cost: 250,
       },
     ],
     active: false,

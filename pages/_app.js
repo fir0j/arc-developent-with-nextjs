@@ -10,7 +10,6 @@ import Footer from '../src/ui/Footer'
 // 2. enable autoplay of animations in customsoftware, iOS/Android, revolution Page
 // 4. Modify to Nepali Number validation in contact form
 // 5. Add features of sending email
-// 6. Change dollar to rupee for estimate
 
 
 export default function MyApp(props) {

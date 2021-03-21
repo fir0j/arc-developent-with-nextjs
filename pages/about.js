@@ -190,7 +190,7 @@ export default function AboutUs({ setValue }) {
           </Typography>
         </Grid>
         <Grid item>
-          <Avatar alt="founder" src="/assets/founder.jpg" className={classes.avatar} />
+          <Avatar alt="founder" src="/assets/founder.png" className={classes.avatar} />
         </Grid>
         <Grid item container justify={matchesMD ? "center" : undefined}>
           <Hidden lgUp>

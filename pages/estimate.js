@@ -616,8 +616,6 @@ export default function Estimate() {
       .map((question) => question.options.filter((option) => option.selected))
       .filter((question) => question.length === 0);
 
-    console.log(emptySelections);
-
     if (questions.length === 2) {
       if (emptySelections.length === 1) {
         disabled = false;

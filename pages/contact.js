@@ -166,7 +166,6 @@ export default function Contact({ setValue }) {
           message: "Message Sent Successfully",
           backgroundColor: "#4BB543",
         });
-        console.log(res);
       })
       .catch((err) => {
         setLoading(false);

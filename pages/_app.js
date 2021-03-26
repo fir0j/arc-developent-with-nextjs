@@ -7,8 +7,6 @@ import Header from '../src/ui/Header'
 import Footer from '../src/ui/Footer'
 
 // to do
-// 2. enable autoplay of animations in customsoftware, iOS/Android, revolution Page
-// 4. Modify to Nepali Number validation in contact form
 // 5. Add features of sending email
 
 

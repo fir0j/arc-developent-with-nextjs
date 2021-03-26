@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Head from "next/head"
+import Head from "next/head";
 import axios from "axios";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Link from "../src/Link" 
+import Link from "../src/Link";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -14,7 +14,6 @@ import Snackbar from "@material-ui/core/Snackbar";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import ButtonArrow from "../src/ui/ButtonArrow";
-
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -147,7 +146,7 @@ export default function Contact({ setValue }) {
   const onSendConfirm = () => {
     setLoading(true);
     axios
-      .get("link of sendMail cloud function deployed into firebase", {
+      .get("https://1dlj1msj26.execute-api.us-east-1.amazonaws.com/sendMail", {
         params: {
           name: name,
           email: email,
@@ -183,7 +182,11 @@ export default function Contact({ setValue }) {
   const buttonContents = (
     <React.Fragment>
       Send Message
-      <img alt="paper airplane" src="/assets/send.svg" style={{ marginLeft: "1em" }} />
+      <img
+        alt="paper airplane"
+        src="/assets/send.svg"
+        style={{ marginLeft: "1em" }}
+      />
     </React.Fragment>
   );
 
@@ -191,10 +194,18 @@ export default function Contact({ setValue }) {
     <Grid container direction="row">
       <Head>
         <title key="title">Contact Us | Arc Development</title>
-        <meta name="description" key="description" content="Let us guide you through the custom software design and development process. Send us a message with any of your ideas or questions to get started!"/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Contact Us" key="og:title"/>
+        <meta
+          name="description"
+          key="description"
+          content="Let us guide you through the custom software design and development process. Send us a message with any of your ideas or questions to get started!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Contact Us"
+          key="og:title"
+        />
         <meta property="og:url" content="arc.com/contact" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/contact" key="canonical"/>
+        <meta rel="canonical" href="https://arc.com/contact" key="canonical" />
       </Head>
       {/* row 1 */}
       <Grid

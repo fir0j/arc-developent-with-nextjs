@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Head from "next/head"
+import Head from "next/head";
 import axios from "axios";
 import { cloneDeep } from "lodash";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -15,7 +15,6 @@ import Hidden from "@material-ui/core/Hidden";
 
 import Snackbar from "@material-ui/core/Snackbar";
 import CircularProgress from "@material-ui/core/CircularProgress";
-
 
 import Lottie from "react-lottie";
 import estimateAnimation from "../src/animations/estimateAnimation/data.json";
@@ -575,7 +574,7 @@ export default function Estimate() {
   const sendEstimate = () => {
     setLoading(true);
     axios
-      .get("link of sendMail cloud function deployed into firebase", {
+      .get("https://1dlj1msj26.execute-api.us-east-1.amazonaws.com/sendMail", {
         params: {
           name: name,
           email: email,
@@ -759,10 +758,18 @@ export default function Estimate() {
         <title key="title">
           Free Custom Software Estimate | Arc Development
         </title>
-        <meta name="description" key="description" content="Use our free online estimate calculator to instantly check the cost of your custom software, mobile Apps or website design and development project!"/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Free Estimate" key="og:title"/>
+        <meta
+          name="description"
+          key="description"
+          content="Use our free online estimate calculator to instantly check the cost of your custom software, mobile Apps or website design and development project!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Free Estimate"
+          key="og:title"
+        />
         <meta property="og:url" content="arc.com/estimate" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/estimate" key="canonical"/>
+        <meta rel="canonical" href="https://arc.com/estimate" key="canonical" />
       </Head>
       <Grid
         item
@@ -885,7 +892,9 @@ export default function Estimate() {
             >
               <img
                 src={
-                  navigationPreviousDisabled() ? "/assets/backArrowDisabled.svg" : "/assets/backArrow.svg"
+                  navigationPreviousDisabled()
+                    ? "/assets/backArrowDisabled.svg"
+                    : "/assets/backArrow.svg"
                 }
                 alt="Previous question"
               />
@@ -898,7 +907,9 @@ export default function Estimate() {
             >
               <img
                 src={
-                  navigationNextDisabled() ? "/assets/forwardArrowDisabled.svg" : "/assets/forwardArrow.svg"
+                  navigationNextDisabled()
+                    ? "/assets/forwardArrowDisabled.svg"
+                    : "/assets/forwardArrow.svg"
                 }
                 alt="Next question"
               />
@@ -1012,7 +1023,7 @@ export default function Estimate() {
                 >
                   we can create this digital solution for an estimated{" "}
                   <span className={classes.specialText}>
-                    Rs.{" "}{total.toFixed(2)}
+                    Rs. {total.toFixed(2)}
                   </span>
                 </Typography>
                 <Typography

@@ -146,7 +146,7 @@ export default function Contact({ setValue }) {
   const onSendConfirm = () => {
     setLoading(true);
     axios
-      .get("https://1dlj1msj26.execute-api.us-east-1.amazonaws.com/sendMail", {
+      .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
           name: name,
           email: email,

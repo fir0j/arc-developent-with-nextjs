@@ -574,13 +574,14 @@ export default function Estimate() {
   const sendEstimate = () => {
     setLoading(true);
     axios
-      .get("https://1dlj1msj26.execute-api.us-east-1.amazonaws.com/sendMail", {
+      .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
           name: name,
           email: email,
           phone: phone,
           message: message,
           total: total,
+          service: service,
           category: category,
           platforms: platforms,
           features: features,

@@ -19,6 +19,10 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Hidden from "@material-ui/core/Hidden";
 
+import ReactGA from "react-ga";
+
+// ReactGA.pageview(window.location.pathname + window.location.search);
+
 function ElevationScroll(props) {
   const { children } = props;
   const trigger = useScrollTrigger({
@@ -135,6 +139,7 @@ export default function Header({
   const [anchorEl, setAnchorEl] = useState(null);
   const [openMenu, setOpenMenu] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
+  const [previousURL, setPreviousURL] = useState("");
 
   const classes = useStyles();
   const theme = useTheme();
@@ -178,6 +183,11 @@ export default function Header({
   ];
 
   useEffect(() => {
+    if (previousURL !== window.location.pathname) {
+      setPreviousURL(window.location.pathname);
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+
     [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {
         case `${route.link}`:
@@ -316,7 +326,13 @@ export default function Header({
         className={classes.button}
         component={Link}
         href="/estimate"
-        onClick={() => setValue(5)}
+        onClick={() => {
+          setValue(5);
+          ReactGA.event({
+            category: "Estimate",
+            action: "Desktop Header Pressed",
+          });
+        }}
       >
         Free Estimate
       </Button>
@@ -473,6 +489,10 @@ export default function Header({
             onClick={() => {
               setOpenDrawer(false);
               setValue(5);
+              ReactGA.event({
+                category: "Estimate",
+                action: "Mobile Header Pressed",
+              });
             }}
             divider
             button

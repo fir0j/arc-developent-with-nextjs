@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga";
 import Head from "next/head";
 import axios from "axios";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -145,6 +146,10 @@ export default function Contact({ setValue }) {
 
   const onSendConfirm = () => {
     setLoading(true);
+    ReactGA.event({
+      category: "Estimate",
+      action: "Send Message",
+    });
     axios
       .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
@@ -554,7 +559,13 @@ export default function Contact({ setValue }) {
             className={classes.estimateButton}
             component={Link}
             href="/estimate"
-            onClick={() => setValue(5)}
+            onClick={() => {
+              setValue(5);
+              ReactGA.event({
+                category: "Estimate",
+                action: "contact page free estimate Pressed",
+              });
+            }}
           >
             Free Estimate
           </Button>

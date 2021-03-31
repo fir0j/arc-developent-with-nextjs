@@ -1,6 +1,7 @@
 import React from "react";
-import Head from "next/head"
-import Link from "../src/Link"
+import ReactGA from "react-ga";
+import Head from "next/head";
+import Link from "../src/Link";
 import Lottie from "react-lottie";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -13,7 +14,6 @@ import CardContent from "@material-ui/core/CardContent";
 import animationData from "../src/animations/landinganimation/data";
 import ButtonArrow from "../src/ui/ButtonArrow";
 import CallToAction from "../src/ui/CallToAction";
-
 
 const useStyles = makeStyles((theme) => ({
   animation: {
@@ -140,10 +140,18 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
         <title key="title">
           Custom Software, Mobile Apps and Websites | Arc Development
         </title>
-        <meta name="description" key="description" content="Pristine-software custom designed from the ground up with cutting-edge optimizations. Use our free estimate calculator to check your project cost!" />
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Arc Development" key="og:title"/>
+        <meta
+          name="description"
+          key="description"
+          content="Pristine-software custom designed from the ground up with cutting-edge optimizations. Use our free estimate calculator to check your project cost!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Arc Development"
+          key="og:title"
+        />
         <meta property="og:url" content="arc.com" key="og:url" />
-        <meta rel="canonical" href="https://arc.com" key="canonical"/>
+        <meta rel="canonical" href="https://arc.com" key="canonical" />
       </Head>
       {/*-----Hero Block-----*/}
       <Grid item>
@@ -163,7 +171,13 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
                   className={classes.estimateButton}
                   component={Link}
                   href="/estimate"
-                  onClick={() => setValue(5)}
+                  onClick={() => {
+                    setValue(5);
+                    ReactGA.event({
+                      category: "Estimate",
+                      action: "index page free estimate Pressed",
+                    });
+                  }}
                 >
                   Free Estimate
                 </Button>

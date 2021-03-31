@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga";
 import Head from "next/head";
 import axios from "axios";
 import { cloneDeep } from "lodash";
@@ -573,6 +574,10 @@ export default function Estimate() {
 
   const sendEstimate = () => {
     setLoading(true);
+    ReactGA.event({
+      category: "Estimate",
+      action: "Estimate sent Pressed",
+    });
     axios
       .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
@@ -927,6 +932,10 @@ export default function Estimate() {
               getFeatures();
               getCustomFeatures();
               getCategory();
+              ReactGA.event({
+                category: "Estimate",
+                action: "Estimate Checked",
+              });
             }}
           >
             Get Estimate

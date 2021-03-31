@@ -1,3 +1,4 @@
+import ReactGA from "react-ga";
 import React from "react";
 import Link from "../Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -106,7 +107,13 @@ export default function CallToAction({ setValue }) {
           className={classes.estimateButton}
           component={Link}
           href="/estimate"
-          onClick={() => setValue(5)}
+          onClick={() => {
+            setValue(5);
+            ReactGA.event({
+              category: "Estimate",
+              action: "Call to Action Pressed",
+            });
+          }}
         >
           Free Estimate
         </Button>

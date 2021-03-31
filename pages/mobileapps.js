@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head"
+import Head from "next/head";
 import Lottie from "react-lottie";
-import Link from "../src/Link"
+import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
@@ -11,8 +11,6 @@ import Hidden from "@material-ui/core/Hidden";
 
 import IntegrationAnimation from "../src/animations/integrationAnimation/data.json";
 import CallToAction from "../src/ui/CallToAction";
-
-
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -52,12 +50,24 @@ export default function MobileApps({ setValue, setSelectedIndex }) {
     <Grid container direction="column">
       <Head>
         <title key="title">
-          iOS/Android App Design and Development | Arc Development
+          iOS/Android App Design and Development | Ace Development
         </title>
-        <meta name="description" key="description" content="Mobile Apps Made Easy | Our cutting-edge mobile app development process lets us build beautifully desined, carefully crafted apps for both iOS and Android."/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | iOS/Android App Development" key="og:title"/>
-        <meta property="og:url" content="arc.com/mobileapps" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/mobileapps" key="canonical"/>
+        <meta
+          name="description"
+          key="description"
+          content="Mobile Apps Made Easy | Our cutting-edge mobile app development process lets us build beautifully desined, carefully crafted apps for both iOS and Android."
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | iOS/Android App Development"
+          key="og:title"
+        />
+        <meta property="og:url" content="Ace.com/mobileapps" key="og:url" />
+        <meta
+          rel="canonical"
+          href="https://Ace.com/mobileapps"
+          key="canonical"
+        />
       </Head>
       <Grid
         item
@@ -171,7 +181,13 @@ export default function MobileApps({ setValue, setSelectedIndex }) {
         </Grid>
 
         <Grid item md>
-          <Lottie options={defaultOptions} style={{ maxWidth: matchesMD ? "15em":"20em", height: matchesMD ? "20em":undefined }} />
+          <Lottie
+            options={defaultOptions}
+            style={{
+              maxWidth: matchesMD ? "15em" : "20em",
+              height: matchesMD ? "20em" : undefined,
+            }}
+          />
         </Grid>
 
         <Grid item container direction="column" md>
@@ -207,7 +223,10 @@ export default function MobileApps({ setValue, setSelectedIndex }) {
         container
         justify="center"
         direction={matchesMD ? "column" : "row"}
-        style={{ marginBottom: "15em", display:matchesMD ? "grid":undefined }}
+        style={{
+          marginBottom: "15em",
+          display: matchesMD ? "grid" : undefined,
+        }}
         className={classes.rowContainer}
       >
         <Grid item container direction="column" md alignItems="center">

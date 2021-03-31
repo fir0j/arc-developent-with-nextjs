@@ -760,7 +760,7 @@ export default function Estimate() {
     <Grid container direction="row">
       <Head>
         <title key="title">
-          Free Custom Software Estimate | Arc Development
+          Free Custom Software Estimate | Ace Development
         </title>
         <meta
           name="description"
@@ -772,8 +772,8 @@ export default function Estimate() {
           content="Bringing West Coast Technology to the Midwest | Free Estimate"
           key="og:title"
         />
-        <meta property="og:url" content="arc.com/estimate" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/estimate" key="canonical" />
+        <meta property="og:url" content="Ace.com/estimate" key="og:url" />
+        <meta rel="canonical" href="https://Ace.com/estimate" key="canonical" />
       </Head>
       <Grid
         item

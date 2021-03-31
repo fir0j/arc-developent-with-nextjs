@@ -1,14 +1,13 @@
 import React from "react";
-import Head from "next/head"
+import Head from "next/head";
 import Lottie from "react-lottie";
-import Link  from "../src/Link";
+import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Hidden from "@material-ui/core/Hidden";
-
 
 import documentsAnimation from "../src/animations/documentsAnimation/data";
 import scaleAnimation from "../src/animations/scaleAnimation/data.json";
@@ -81,10 +80,22 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
     <Grid container direction="column">
       <Head>
         <title key="title">Custom Software and Design - Free Estimate</title>
-        <meta name="description" key="description" content="Cutting-Edge custom software development with gorgeous design from scratch - Let us optimize your business, solving problems instead of creating new ones.!"/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Custom Software Development" key="og:title"/>
-        <meta property="og:url" content="arc.com/customsoftware" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/customsoftware" key="canonical"/>
+        <meta
+          name="description"
+          key="description"
+          content="Cutting-Edge custom software development with gorgeous design from scratch - Let us optimize your business, solving problems instead of creating new ones.!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Custom Software Development"
+          key="og:title"
+        />
+        <meta property="og:url" content="Ace.com/customsoftware" key="og:url" />
+        <meta
+          rel="canonical"
+          href="https://Ace.com/customsoftware"
+          key="canonical"
+        />
       </Head>
       <Grid
         item
@@ -123,7 +134,7 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
               align={matchesMD ? "center" : undefined}
             >
               Whether we're replacing old software or inventing new solutions,
-              Arc Development is here to help your business tackle technology.
+              Ace Development is here to help your business tackle technology.
             </Typography>
             <Typography
               variant="body1"
@@ -235,9 +246,9 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
         container
         alignItems={matchesMD ? "center" : undefined}
         direction={matchesMD ? "column" : "row"}
-        justify={matchesMD ? "center":"space-between"}
+        justify={matchesMD ? "center" : "space-between"}
         className={classes.rowContainer}
-        style={{display: matchesMD ? "grid":undefined}}
+        style={{ display: matchesMD ? "grid" : undefined }}
       >
         <Grid
           item
@@ -316,7 +327,7 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
                 align={matchesSM ? "center" : "right"}
               >
                 Whether you're a large brand, just started, or taking off right
-                now, our application architecture ensures pain-free growth and
+                now, our application Acehitecture ensures pain-free growth and
                 reliability.
               </Typography>
             </Grid>
@@ -359,8 +370,11 @@ export default function CustomSoftware({ setValue, setSelectedIndex }) {
         container
         alignItems={matchesMD ? "center" : undefined}
         direction={matchesMD ? "column" : "row"}
-        justify={matchesMD ? "center":"space-between"}
-        style={{ marginBottom: "20em", display: matchesMD ? "grid":undefined}}
+        justify={matchesMD ? "center" : "space-between"}
+        style={{
+          marginBottom: "20em",
+          display: matchesMD ? "grid" : undefined,
+        }}
         className={classes.rowContainer}
       >
         <Grid

@@ -1,12 +1,11 @@
 import React from "react";
-import Head from "next/head"
+import Head from "next/head";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Avatar from "@material-ui/core/Avatar";
 import Hidden from "@material-ui/core/Hidden";
-
 
 import CallToAction from "../src/ui/CallToAction";
 
@@ -46,12 +45,20 @@ export default function AboutUs({ setValue }) {
 
   return (
     <Grid container direction="column">
-      <Head >
-        <title key="title">About Us - History & Team | Arc Development</title>
-        <meta name="description"  content="We provide the fastest, most mordern, affordable, and aesthetic software design and development services in the Midwest. Get a free online estimate now!" key="description"/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | About Us" key="og:title"/>
-        <meta property="og:url" content="arc.com/about" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/about" key="canonical"/>
+      <Head>
+        <title key="title">About Us - History & Team | Ace Development</title>
+        <meta
+          name="description"
+          content="We provide the fastest, most mordern, affordable, and aesthetic software design and development services in the Midwest. Get a free online estimate now!"
+          key="description"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | About Us"
+          key="og:title"
+        />
+        <meta property="og:url" content="Ace.com/about" key="og:url" />
+        <meta rel="canonical" href="https://Ace.com/about" key="canonical" />
       </Head>
       <Grid
         item
@@ -76,7 +83,7 @@ export default function AboutUs({ setValue }) {
         >
           Whether it be a person to person, business to consumer, or an
           individual to thier interests, technology is meant to bring us closer
-          to what we care about in best way possible. Arc Development will use
+          to what we care about in best way possible. Ace Development will use
           that priciple to provide fast, modern, inexpensive and athestic
           software to the Midwest and beyond.
         </Typography>
@@ -190,16 +197,21 @@ export default function AboutUs({ setValue }) {
           </Typography>
         </Grid>
         <Grid item>
-          <Avatar alt="founder" src="/assets/founder.png" className={classes.avatar} />
+          <Avatar
+            alt="founder"
+            src="/assets/founder.png"
+            className={classes.avatar}
+          />
         </Grid>
         <Grid item container justify={matchesMD ? "center" : undefined}>
           <Hidden lgUp>
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" paragraph align="center">
-                I taught myself basic coding from library book, through online courses, college 
-                and ever since then my passion has solely been set on learning -
-                learning about computers, learning about mathematics and
-                philosophy, studying desing and always just learning.
+                I taught myself basic coding from library book, through online
+                courses, college and ever since then my passion has solely been
+                set on learning - learning about computers, learning about
+                mathematics and philosophy, studying desing and always just
+                learning.
               </Typography>
               <Typography variant="body1" paragraph align="center">
                 Now I am ready to apply everything i've learned, and to help

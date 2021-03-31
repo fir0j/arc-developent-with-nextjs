@@ -1,14 +1,12 @@
 import React from "react";
-import Head from "next/head"
-import Link from "../src/Link"
+import Head from "next/head";
+import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import ButtonArrow from "../src/ui/ButtonArrow";
-
-
 
 const useStyles = makeStyles((theme) => ({
   specialText: {
@@ -49,12 +47,20 @@ export default function Services({ setValue, setSelectedIndex }) {
     <Grid container direction="column">
       <Head>
         <title key="title">
-          Top Custom Software Development Services | Arc Development
+          Top Custom Software Development Services | Ace Development
         </title>
-        <meta name="description" key="description" content="Cutting-edge sotware, mobile apps, and website development services sleek custom design - get a free online estimate instantly!"/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Services" key="og:title"/>
-        <meta property="og:url" content="arc.com/services" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/services" key="canonical"/>
+        <meta
+          name="description"
+          key="description"
+          content="Cutting-edge sotware, mobile apps, and website development services sleek custom design - get a free online estimate instantly!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Services"
+          key="og:title"
+        />
+        <meta property="og:url" content="Ace.com/services" key="og:url" />
+        <meta rel="canonical" href="https://Ace.com/services" key="canonical" />
       </Head>
       <Grid
         item
@@ -192,7 +198,7 @@ export default function Services({ setValue, setSelectedIndex }) {
               Reach More. Discover More. Sell More.
             </Typography>
             <Typography variant="subtitle1">
-              Optimized for Search Engines, built for speed.
+              Optimized for SeAceh Engines, built for speed.
             </Typography>
             <Button
               variant="outlined"

@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "next/head"
+import Head from "next/head";
 import Lottie from "react-lottie";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -40,12 +40,24 @@ export default function Revolution({ setValue }) {
     <Grid container direction="column">
       <Head>
         <title key="title">
-          The Revolution - Cutting-Edge Software | Arc Development
+          The Revolution - Cutting-Edge Software | Ace Development
         </title>
-        <meta name="description" key="description" content="Visionary insights coupled with cutting-edge technology, is a recipe for revolution. Get a free online estimate instantly!"/>
-        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | The Revolution" key="og:title"/>
-        <meta property="og:url" content="arc.com/revolution"  key="og:url"/>
-        <meta rel="canonical" href="https://arc.com/revolution" key="canonical"/>
+        <meta
+          name="description"
+          key="description"
+          content="Visionary insights coupled with cutting-edge technology, is a recipe for revolution. Get a free online estimate instantly!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | The Revolution"
+          key="og:title"
+        />
+        <meta property="og:url" content="Ace.com/revolution" key="og:url" />
+        <meta
+          rel="canonical"
+          href="https://Ace.com/revolution"
+          key="canonical"
+        />
       </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: "2em" }}>
         <Typography
@@ -432,7 +444,12 @@ export default function Revolution({ setValue }) {
           </Grid>
         </Grid>
         <Grid item lg style={{ alignSelf: "center" }}>
-          <img src="/assets/reviewIcon.svg" alt="magnifying glass" width="100%" style={{maxWidth:"40em"}}/>
+          <img
+            src="/assets/reviewIcon.svg"
+            alt="magnifying glass"
+            width="100%"
+            style={{ maxWidth: "40em" }}
+          />
         </Grid>
       </Grid>
       {/* --- */}
@@ -544,7 +561,12 @@ export default function Revolution({ setValue }) {
           </Grid>
         </Grid>
         <Grid item lg style={{ alignSelf: "center" }}>
-          <img src="/assets/reviewIcon.svg" alt="magnifying glass" width="100%" style={{maxWidth:"40em"}} />
+          <img
+            src="/assets/reviewIcon.svg"
+            alt="magnifying glass"
+            width="100%"
+            style={{ maxWidth: "40em" }}
+          />
         </Grid>
       </Grid>
       {/* --- */}
@@ -848,7 +870,11 @@ export default function Revolution({ setValue }) {
           </Grid>
         </Grid>
         <Grid item lg style={{ alignSelf: "center" }}>
-          <img src="/assets/iterateIcon.svg" alt="falling dominoes" width="100%" />
+          <img
+            src="/assets/iterateIcon.svg"
+            alt="falling dominoes"
+            width="100%"
+          />
         </Grid>
       </Grid>
       <Grid item>

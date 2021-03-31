@@ -144,13 +144,13 @@ export default function Contact({ setValue }) {
     }
   };
 
-  const onSendConfirm = () => {
+  const onSendConfirm = async () => {
     setLoading(true);
     ReactGA.event({
       category: "Estimate",
       action: "Send Message",
     });
-    axios
+    await axios
       .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
           name: name,
@@ -197,7 +197,7 @@ export default function Contact({ setValue }) {
   return (
     <Grid container direction="row">
       <Head>
-        <title key="title">Contact Us | Arc Development</title>
+        <title key="title">Contact Us | Ace Development</title>
         <meta
           name="description"
           key="description"
@@ -208,8 +208,8 @@ export default function Contact({ setValue }) {
           content="Bringing West Coast Technology to the Midwest | Contact Us"
           key="og:title"
         />
-        <meta property="og:url" content="arc.com/contact" key="og:url" />
-        <meta rel="canonical" href="https://arc.com/contact" key="canonical" />
+        <meta property="og:url" content="Ace.com/contact" key="og:url" />
+        <meta rel="canonical" href="https://Ace.com/contact" key="canonical" />
       </Head>
       {/* row 1 */}
       <Grid

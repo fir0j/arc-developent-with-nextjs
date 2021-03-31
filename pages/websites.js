@@ -1,6 +1,6 @@
 import React from "react";
-import Head from "next/head"
-import Link from '../src/Link'
+import Head from "next/head";
+import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
@@ -9,7 +9,6 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Hidden from "@material-ui/core/Hidden";
 
 import CallToAction from "../src/ui/CallToAction";
-
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -52,12 +51,20 @@ export default function Websites({ setValue, setSelectedIndex }) {
     <Grid container direction="column">
       <Head>
         <title key="title">
-          Stunning Custom Website Design | Arc Development
+          Stunning Custom Website Design | Ace Development
         </title>
-      <meta name="description" key="description" content="Completely Custom Designed and built from scatch to be blazing. Optimized code, server-side rendering and perfect responsive design | 99% Page Speed Scrore"/>
-      <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Websites" key="og:title"/>
-      <meta property="og:url" content="arc.com/websites" />
-      <meta rel="canonical" href="https://arc.com/websites" key="canonical"/>
+        <meta
+          name="description"
+          key="description"
+          content="Completely Custom Designed and built from scatch to be blazing. Optimized code, server-side rendering and perfect responsive design | 99% Page Speed Scrore"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Websites"
+          key="og:title"
+        />
+        <meta property="og:url" content="Ace.com/websites" />
+        <meta rel="canonical" href="https://Ace.com/websites" key="canonical" />
       </Head>
       <Grid
         item
@@ -121,7 +128,10 @@ export default function Websites({ setValue, setSelectedIndex }) {
               href="/services"
               onClick={() => setSelectedIndex(0)}
             >
-              <img alt="forward to Services Page" src="/assets/forwardArrow.svg" />
+              <img
+                alt="forward to Services Page"
+                src="/assets/forwardArrow.svg"
+              />
             </IconButton>
           </Grid>
         </Hidden>
@@ -180,7 +190,10 @@ export default function Websites({ setValue, setSelectedIndex }) {
               </Typography>
             </Grid>
             <Grid item>
-              <img alt="world outlines made of dollar signs" src="/assets/ecommerce.svg" />
+              <img
+                alt="world outlines made of dollar signs"
+                src="/assets/ecommerce.svg"
+              />
             </Grid>
           </Grid>
         </Grid>
@@ -252,17 +265,20 @@ export default function Websites({ setValue, setSelectedIndex }) {
         className={classes.rowContainer}
         alignItems="center"
         justify="flex-end"
-        style={{marginBottom: "15em" }}
+        style={{ marginBottom: "15em" }}
       >
         <Grid item>
           <Grid container direction="column">
             <Grid item>
               <Typography variant="h4" gutterBottom align="center">
-                Search Engine <br /> Optimization
+                SeAceh Engine <br /> Optimization
               </Typography>
             </Grid>
             <Grid item>
-              <img alt="website standing on winner's podium" src="/assets/seo.svg" />
+              <img
+                alt="website standing on winner's podium"
+                src="/assets/seo.svg"
+              />
             </Grid>
           </Grid>
         </Grid>

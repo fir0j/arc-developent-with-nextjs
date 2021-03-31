@@ -138,7 +138,7 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
     <Grid container direction="column" className={classes.mainContainer}>
       <Head>
         <title key="title">
-          Custom Software, Mobile Apps and Websites | Arc Development
+          Custom Software, Mobile Apps and Websites | Ace Development
         </title>
         <meta
           name="description"
@@ -147,11 +147,11 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
         />
         <meta
           property="og:title"
-          content="Bringing West Coast Technology to the Midwest | Arc Development"
+          content="Bringing West Coast Technology to the Midwest | Ace Development"
           key="og:title"
         />
-        <meta property="og:url" content="arc.com" key="og:url" />
-        <meta rel="canonical" href="https://arc.com" key="canonical" />
+        <meta property="og:url" content="Ace.com" key="og:url" />
+        <meta rel="canonical" href="https://Ace.com" key="canonical" />
       </Head>
       {/*-----Hero Block-----*/}
       <Grid item>
@@ -324,7 +324,7 @@ export default function LandingPage({ setValue, setSelectedIndex }) {
               Reach More. Discover More. Sell More.
             </Typography>
             <Typography variant="subtitle1">
-              Optimized for Search Engines, built for speed.
+              Optimized for SeAceh Engines, built for speed.
             </Typography>
             <Button
               variant="outlined"

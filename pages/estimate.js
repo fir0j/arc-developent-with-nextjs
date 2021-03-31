@@ -572,13 +572,13 @@ export default function Estimate() {
     }
   };
 
-  const sendEstimate = () => {
+  const sendEstimate = async () => {
     setLoading(true);
     ReactGA.event({
       category: "Estimate",
       action: "Estimate sent Pressed",
     });
-    axios
+    await axios
       .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
           name: name,
@@ -604,11 +604,11 @@ export default function Estimate() {
         setDialogOpen(false);
       })
       .catch((err) => {
-        console.error(err);
+        console.log("your log in catch is:", err);
         setLoading(false);
         setAlert({
           open: true,
-          message: "Something went wrong, please try again!",
+          message: `${err.message}, Please try again!`,
           backgroundColor: "#FF3232",
         });
       });

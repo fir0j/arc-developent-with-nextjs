@@ -8,6 +8,7 @@ import Header from "../src/ui/Header";
 import Footer from "../src/ui/Footer";
 
 ReactGA.initialize("G-46K623C3DF");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function MyApp(props) {
   const [value, setValue] = useState(0);

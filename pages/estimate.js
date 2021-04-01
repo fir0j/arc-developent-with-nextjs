@@ -572,13 +572,13 @@ export default function Estimate() {
     }
   };
 
-  const sendEstimate = async () => {
+  const sendEstimate = () => {
     setLoading(true);
     ReactGA.event({
       category: "Estimate",
       action: "Estimate sent Pressed",
     });
-    await axios
+    axios
       .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
           name: name,

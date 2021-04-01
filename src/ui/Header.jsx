@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga";
 import Link from "../Link";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -18,8 +19,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Hidden from "@material-ui/core/Hidden";
-
-import ReactGA from "react-ga";
 
 // ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -183,10 +182,10 @@ export default function Header({
   ];
 
   useEffect(() => {
-    if (previousURL !== window.location.pathname) {
-      setPreviousURL(window.location.pathname);
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    // if (previousURL !== window.location.pathname) {
+    //   setPreviousURL(window.location.pathname);
+    // }
 
     [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {

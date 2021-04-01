@@ -182,10 +182,10 @@ export default function Header({
   ];
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    // if (previousURL !== window.location.pathname) {
-    //   setPreviousURL(window.location.pathname);
-    // }
+    if (previousURL !== window.location.pathname) {
+      setPreviousURL(window.location.pathname);
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
 
     [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {

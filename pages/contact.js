@@ -144,13 +144,13 @@ export default function Contact({ setValue }) {
     }
   };
 
-  const onSendConfirm = async () => {
+  const onSendConfirm = () => {
     setLoading(true);
     ReactGA.event({
       category: "Estimate",
       action: "Send Message",
     });
-    await axios
+    axios
       .get("https://bvq8ew8osl.execute-api.ap-south-1.amazonaws.com/sendMail", {
         params: {
           name: name,
